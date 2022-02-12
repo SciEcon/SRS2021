@@ -1,4 +1,4 @@
-# Data for Moving Average Strategies
+# Dataset description for Moving Average Strategies
 |   Datasets   | Type |    Description    |  
 |:-----------------:|:---------:|:----------:|
 |     sma_eth       |   csv   | Cryptocurrency ETH Trading by Simple Moving Average |   
