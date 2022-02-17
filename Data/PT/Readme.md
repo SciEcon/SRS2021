@@ -22,7 +22,7 @@ The filenames follow the following format
   
   SPREAD can be either n-spread (Normal Spread) or s-spread (Simple Spread) as defined in the article
   
-  CRITERIA can be either sarmento [1] or gatev [2] or neither (in such a case "S&P500-and-" becomes just "S&P500")
+  CRITERIA can be either sarmento [1] or gatev [2] or neither (in such a case "S&P-and-" becomes just "S&P")
 
 
 ## References
