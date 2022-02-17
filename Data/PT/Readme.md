@@ -24,7 +24,7 @@ The filenames follow the following format
   
   CRITERIA can be either sarmento [1] or gatev [2] or neither (in such a case "S&P-and-" becomes just "S&P")
   
-  AGG tells if the information is aggregated or not, if it's aggregated that means the data collected corresponds to the whole portfolio
+  AGG tells if the information is aggregated or not, if it's aggregated that means the data collected corresponds to the whole portfolio, if it is not included then the data is seggregated by pairs.
 
 
 ## References
