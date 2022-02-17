@@ -3,26 +3,26 @@ This folder includes all the data related to pairs trading. The files are divide
 ## Preprocessing data
 The file names follow the following format
 <code>
-"preprocessing_pairs_S&P500-and-[cryptocurrency name]_[selection criteria].csv"
+"preprocessing_pairs_S&P500-and-CRYPTOCURRENCY_CRITERIA.csv"
 </code>
   
   Where:
   
-  cryptocurrency name can be BTC (bitcoin) or ETC (ethereum)
+  CRYPTOCURRENCY can be BTC (bitcoin) or ETC (ethereum)
   
-  selection criteria can be either sarmento [1] or gatev [2] or neither (in such a case "S&P500-and-<>" becomes just "S&P500")
+  CRITERIA can be either sarmento [1] or gatev [2] or neither (in such a case "S&P500-and-<>" becomes just "S&P500")
 
 ## Trading data
 The filenames follow the following format 
- <code>"pairs_S&P-and-[cryptocurrency name]_[spread name]_[selection criteria].csv"</code>
+ <code>"pairs_S&P-and-CRYPTOCURRENCY_SPREAD_CRITERIA.csv"</code>
   
   Where:
   
-  cryptocurrency name can be BTC (bitcoin) or ETC (ethereum)
+  CRYPTOCURRENCY can be BTC (bitcoin) or ETC (ethereum)
   
-  spread name can be either n-spread (Normal Spread) or s-spread (Simple Spread) as defined in the article
+  SPREAD can be either n-spread (Normal Spread) or s-spread (Simple Spread) as defined in the article
   
-  selection criteria can be either sarmento [1] or gatev [2] or neither (in such a case "S&P500-and-<>" becomes just "S&P500")
+  CRITERIA can be either sarmento [1] or gatev [2] or neither (in such a case "S&P500-and-<>" becomes just "S&P500")
 
   
   [1] Sarmento, S. M., & Horta, N. (2020). Enhancing a Pairs Trading strategy with the application of Machine Learning. Expert Systems with Applications, 158, 113490. https://doi.org/10.1016/j.eswa.2020.113490
