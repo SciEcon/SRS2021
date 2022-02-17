@@ -14,7 +14,7 @@ The file names follow the following format
 
 ## Trading data
 The filenames follow the following format 
- <code>"pairs_S&P-and-CRYPTOCURRENCY_SPREAD_CRITERIA.csv"</code>
+ <code>"pairs_S&P-and-CRYPTOCURRENCY_SPREAD_CRITERIA_AGG.csv"</code>
   
   Where:
   
@@ -23,6 +23,8 @@ The filenames follow the following format
   SPREAD can be either n-spread (Normal Spread) or s-spread (Simple Spread) as defined in the article
   
   CRITERIA can be either sarmento [1] or gatev [2] or neither (in such a case "S&P-and-" becomes just "S&P")
+  
+  AGG tells if the information is aggregated or not, if it's aggregated that means the data collected corresponds to the whole portfolio
 
 
 ## References
