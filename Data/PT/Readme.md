@@ -10,7 +10,7 @@ The file names follow the following format
   
   CRYPTOCURRENCY can be BTC (bitcoin) or ETC (ethereum)
   
-  CRITERIA can be either sarmento [1] or gatev [2] or neither (in such a case "S&P500-and-<>" becomes just "S&P500")
+  CRITERIA can be either sarmento [1] or gatev [2] or neither (in such a case "S&P500-and-" becomes just "S&P500")
 
 ## Trading data
 The filenames follow the following format 
@@ -22,7 +22,7 @@ The filenames follow the following format
   
   SPREAD can be either n-spread (Normal Spread) or s-spread (Simple Spread) as defined in the article
   
-  CRITERIA can be either sarmento [1] or gatev [2] or neither (in such a case "S&P500-and-<>" becomes just "S&P500")
+  CRITERIA can be either sarmento [1] or gatev [2] or neither (in such a case "S&P500-and-" becomes just "S&P500")
 
   
   [1] Sarmento, S. M., & Horta, N. (2020). Enhancing a Pairs Trading strategy with the application of Machine Learning. Expert Systems with Applications, 158, 113490. https://doi.org/10.1016/j.eswa.2020.113490
