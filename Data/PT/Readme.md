@@ -3,7 +3,7 @@ This folder includes all the data related to pairs trading. The files are divide
 ## Preprocessing data
 The file names follow the following format
 <code>
-"preprocessing_pairs_S&P500-and-<cryptocurrency name>_<selection criteria>.csv"
+"preprocessing_pairs_S&P500-and-[cryptocurrency name]_[selection criteria].csv"
 </code>
   
   Where:
@@ -14,7 +14,7 @@ The file names follow the following format
 
 ## Trading data
 The filenames follow the following format 
- <code>"pairs_S&P-and-<cryptocurrency name>_<spread name>_<selection criteria>.csv"</code>
+ <code>"pairs_S&P-and-[cryptocurrency name]_[spread name]_[selection criteria].csv"</code>
   
   Where:
   
