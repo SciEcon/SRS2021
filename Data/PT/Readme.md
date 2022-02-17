@@ -22,4 +22,5 @@ The filenames follow the following format "pairs_S&P-and-<cryptocurrency name>_<
 
   
   [1] Sarmento, S. M., & Horta, N. (2020). Enhancing a Pairs Trading strategy with the application of Machine Learning. Expert Systems with Applications, 158, 113490. https://doi.org/10.1016/j.eswa.2020.113490
+  
   [2] Gatev, E., Goetzmann, W. N., & Rouwenhorst, K. G. (2006). Pairs Trading: Performance of a Relative-Value Arbitrage Rule. Review of Financial Studies, 19(3), 797–827. https://doi.org/10.1093/rfs/hhj020
