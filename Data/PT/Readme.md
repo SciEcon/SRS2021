@@ -3,22 +3,22 @@ This folder includes all the data related to pairs trading. The files are divide
 ## Preprocessing data
 The file names follow the following format
 <code>
-"preprocessing_pairs_S&P500-and-CRYPTOCURRENCY_CRITERIA.csv"
+"preprocessing_pairs_DATA_CRITERIA.csv"
 </code>
   
   Where:
   
-  CRYPTOCURRENCY can be BTC (bitcoin) or ETC (ethereum)
+  DATA can be from the S&P500 or DigitalCurrencies available in AlphaVantage
   
   CRITERIA can be either sarmento [1] or gatev [2] or neither (in such a case "S&P500-and-" becomes just "S&P500")
 
 ## Trading data
 The filenames follow the following format 
- <code>"pairs_S&P-and-CRYPTOCURRENCY_SPREAD_CRITERIA_AGG.csv"</code>
+ <code>"pairs_DATA_SPREAD_CRITERIA_AGG.csv"</code>
   
   Where:
   
-  CRYPTOCURRENCY can be BTC (bitcoin) or ETC (ethereum)
+  DATA can be from the S&P500 or DigitalCurrencies available in AlphaVantage
   
   SPREAD can be either n-spread (Normal Spread) or s-spread (Simple Spread) as defined in the article
   
