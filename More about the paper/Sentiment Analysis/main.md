@@ -50,7 +50,7 @@ Table 2 shows the sentiment analysis calculated variables:
 | **ID**  | **Frequency** | **Unit** | **Description** |
 | :----------------: | :-----------: | :------: | --------------------------- |
 |$P_{comp}$ | per tweet | - | A normalized compound score that sums every lexicon rating and takes values from -1 to 1 |
-|${EMA}_{t}$ (10-day) | daily | USD | Exponential moving average of adjusted closing price, where ${EMA}_{0}={P}_{0}$ and ${EMA}_{t}=(1-\alpha)EMA_{t-1}+{P}_{t}$, $\alpha= 2/(s+1)$, for span $s \geq 1$, $s$: decay in terms of span\\ ${P}_{t}$ : day $t$ closing price\end{tabular} |
+|$EMA_{t}$ (10-day) | daily | USD | Exponential moving average of adjusted closing price, where $EMA_{0} = P_{0}$ and $EMA_{t} = (1-\alpha)EMA_{t-1}+P_{t}, \alpha = 2/(s+1)$. For span $s \geq 1, s:$ decay in terms of span $P_{t}$ : day t closing price |
 
 \begin{tabular}[c]{@{}l@{}}Raw \\ Trading \\ Position\end{tabular} & daily & USD & $P_t-EMA_{t}$ \\ \hline
 
