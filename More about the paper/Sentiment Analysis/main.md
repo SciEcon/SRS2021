@@ -25,6 +25,7 @@ We collected historical stock prices and cryptocurrency prices from Yahoo Financ
 | Tweets|- | - |
 |Stock Price | daily | USD |
 |Crypto Price | daily | USD|
+
 *Table 1: Sentiment Analysis: Raw Variables. Data Source: Snscrape API, Yahoo Finance API, Alpha Vantage API. This table shows the raw data that we retrieved from the APIs. The price of stock and crypto asset corresponds to the close price of the given asset at a given date.*
 
 Valence Aware Dictionary and Entiment Reasoner (VADER) is a lexicon-based sentiment analysis tool developed by Hutto and Gilbert [[13]](https://ojs.aaai.org/index.php/ICWSM/article/view/14550). VADER’s lexicon has a rating for each word, illustrating the sentiment polarity (positive/negative) as well as sentiment intensity scaling from -4 to 4. For example, the word “sucks” has a rating of -1.5, while the word “great” has a rating of 3.1. Developers asked people from Amazon Mechanical Turk to manually rate each word. When one applies VADER to rate one sentence, the sentence is split into words, and the words which have been presented in the lexicon are summed up together. “Today is a good day and the weather is nice” has two words, “good” and “great ”, and has ratings of 1.9 and 1.8 respectively. The compound sentiment metric $P_{comp}$ is the sum of all the ratings that have been standardized to a scaling from -1 to 1. We categorized the sentiment based on $P_{comp}$ metric by mean and standard deviation with a multiple of 0.2.
