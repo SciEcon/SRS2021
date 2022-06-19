@@ -46,3 +46,17 @@ Valence Aware Dictionary and Entiment Reasoner (VADER) is a lexicon-based sentim
 The exponential moving average (EMA) is a technical chart indicator that tracks the price of an investment (like a stock or commodity) over time. The EMA is a type of weighted moving average (WMA) that gives more weighting or importance to recent price data.
 
 Table 2 shows the sentiment analysis calculated variables: 
+
+| **ID**  | **Frequency** | **Unit** | **Description** |
+| :----------------: | :-----------: | :------: | --------------------------- |
+|$P_{comp}$ | per tweet | - | A normalized compound score that sums every lexicon rating and takes values from -1 to 1 |
+|${EMA}_{t}$ (10-day) | daily | USD | Exponential moving average of adjusted closing price, where ${EMA}_{0}={P}_{0}$ and ${EMA}_{t}=(1-\alpha)EMA_{t-1}+{P}_{t}$, $\alpha= 2/(s+1)$, for span $s \geq 1$, $s$: decay in terms of span\\ ${P}_{t}$ : day $t$ closing price\end{tabular} |
+
+\begin{tabular}[c]{@{}l@{}}Raw \\ Trading \\ Position\end{tabular} & daily & USD & $P_t-EMA_{t}$ \\ \hline
+
+
+\begin{tabular}[c]{@{}l@{}}Sentiment\\ Category\end{tabular} & daily & \begin{tabular}[c]{@{}l@{}}Negative, \\ Positive, \\ Neutral\end{tabular} & \begin{tabular}[c]{@{}l@{}} $Negative:$ \\ $P_{comp}<\bar P_{comp}-0.2  \sigma_{P_{comp}}$\\ $Positive:$  \\ $P_{comp}>\bar P_{comp}+0.2  \sigma_{P_{comp}}$\\Neutral: \\{[}$P_{comp}$$\geq$$\bar P_{comp}-0.2\sigma_{P_{comp}},$ \\ $P_{comp}$$\leq$$\bar P_{comp}+0.2\sigma_{P_{comp}}${]}\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Trading\\ Positions\end{tabular} & daily & 1 or -1 & \begin{tabular}[c]{@{}l@{}}1 represents buy, \\ -1 represents sell\end{tabular} \\ \hline
+\end{tabular}
+
+*Table 2: Sentiment Analysis: Calculated Variables. This table shows a detailed description of the calculated variables. *
