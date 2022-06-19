@@ -75,15 +75,26 @@ Figure 5 displays a comparison of the Sharpe Ratio when trading BTC using buy-an
 # Discussion
 Figures below show the generated buy-and-sell signals using the sentiment analysis strategy, the portfolio evolution, the ROI, and the Sharpe Ratio for Ether (ETH) and Apple (AAPL) stock.
 
-![AAPL Buy-and-sell Signal](https://github.com/SciEcon/SRS2021/blob/main/fig/fig5_3_a.png)
+![AAPL Buy-and-sell Signal](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_5_3_a.png)
 *Figure 6: AAPL Buy-and-sell Signal: Sentiment Analysis*
 
-
-![AAPL Portfolio Time Series](https://github.com/SciEcon/SRS2021/blob/main/fig/fig5_3_b.png)
+![AAPL Portfolio Time Series](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_5_3_b.png)
 *Figure 7: AAPL Portfolio Time Series: Sentiment Analysis*
 
-![AAPL Gross ROI](https://github.com/SciEcon/SRS2021/blob/main/fig/fig5_3_c.png)
-*Figure 8: Gross ROI: Sentiment Analysis vs Buy-And-Hold: Sentiment strategy ROI: 16.32\%, Buy & hold strategy ROI: -3.40\%*
+![AAPL Gross ROI](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_5_3_c.png)
+*Figure 8: AAPL Gross ROI: Sentiment Analysis vs Buy-And-Hold: Sentiment strategy ROI: 16.32\%, Buy & hold strategy ROI: -3.40\%*
 
-![AAPL Sharpe Ratio](https://github.com/SciEcon/SRS2021/blob/main/fig/fig5_3_d.png)
-*Figure 9: Sentiment strategy Sharpe Ratio: 1.07, Buy & hold strategy Sharpe Ratio: -0.09*
+![AAPL Sharpe Ratio](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_5_3_d.png)
+*Figure 9: AAPL Sentiment strategy Sharpe Ratio: 1.07, Buy & hold strategy Sharpe Ratio: -0.09*
+
+![ETH Buy-and-sell Signal](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_5_3_e.png)
+*Figure 10: ETH Buy-and-sell Signal: Sentiment Analysis*
+
+![ETH Portfolio Time Series](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_5_3_f.png)
+*Figure 11: ETH Portfolio Time Series: Sentiment Analysis*
+
+![ETH Gross ROI](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_5_3_g.png)
+*Figure 12: ETH Gross ROI: Sentiment Analysis vs Buy-And-Hold: Sentiment strategy ROI: 98.79\%, Buy & hold strategy ROI: 271.25\%*
+
+![ETH Sharpe Ratio](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_5_3_h.png)
+*Figure 13: ETH Sentiment strategy Sharpe Ratio: 1.50, Buy & hold strategy Sharpe Ratio: 1.95*
