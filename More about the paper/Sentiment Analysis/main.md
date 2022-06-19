@@ -57,10 +57,7 @@ Table 2 shows the sentiment analysis calculated variables:
 
 *Table 2: Sentiment Analysis: Calculated Variables. This table shows a detailed description of the calculated variables.*
 
-The initial capital is 100,000 USD. The transaction fee is 0.1\%. We sell the assets when
-\begin{equation}
-    P_t-EMA_t> \sigma_{P-EMA} \: \& \: sentiment=negative
-\end{equation}
+The initial capital is 100,000 USD. The transaction fee is 0.1\%. We sell the assets when $P_t - {EMA}_t> \sigma_{P-EMA}$ \: \& \: sentiment=negative,
 
 and we buy the assets when
 \begin{equation}
