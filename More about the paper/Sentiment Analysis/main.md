@@ -52,7 +52,7 @@ Table 2 shows the sentiment analysis calculated variables:
 |$P_{comp}$ | per tweet | - | A normalized compound score that sums every lexicon rating and takes values from -1 to 1 |
 |$EMA_{t}$ (10-day) | daily | USD | Exponential moving average of adjusted closing price, where $EMA_{0} = P_{0}$ and $EMA_{t} = (1-\alpha)EMA_{t-1}+P_{t}, \alpha = 2/(s+1)$. For span $s \geq 1, s:$ decay in terms of span $P_{t}$ : day t closing price |
 |Raw Trading Position | daily | USD | $P_t-EMA_{t}$|
-|Sentiment Category | daily | Negative, Positive, Neutral | Negative: $P_{comp}<\bar P_{comp}-0.2\sigma_{P_{comp}}$; <br /> Positive: $P_{comp}>\bar P_{comp}+0.2\sigma_{P_{comp}}$; <br /> Neutral: \[$P_{comp} \geq \bar P_{comp}-0.2\sigma_{P_{comp}}, P_{comp} \leq \bar P_{comp}+0.2\sigma_{P_{comp}}$\]|
+|Sentiment Category | daily | Negative, Positive, Neutral | Negative: $P_{comp}<\bar P_{comp}-0.2\sigma_{P_{comp}}$ <br /> Positive: $P_{comp}>\bar P_{comp}+0.2\sigma_{P_{comp}}$ <br /> Neutral: \[$P_{comp} \geq \bar P_{comp}-0.2\sigma_{P_{comp}}$, $P_{comp} \leq \bar P_{comp}+0.2\sigma_{P_{comp}}$\]|
 |Trading Positions | daily | - |1 represents buy, and -1 represents sell |
 
 *Table 2: Sentiment Analysis: Calculated Variables. This table shows a detailed description of the calculated variables. *
