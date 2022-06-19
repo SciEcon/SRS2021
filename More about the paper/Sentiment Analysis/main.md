@@ -55,4 +55,4 @@ Table 2 shows the sentiment analysis calculated variables:
 |Sentiment Category | daily | Negative, Positive, Neutral | Negative: $P_{comp}<\bar P_{comp}-0.2\sigma_{P_{comp}}$ <br /> Positive: $P_{comp}>\bar P_{comp}+0.2\sigma_{P_{comp}}$ <br /> Neutral: \[$P_{comp} \geq \bar P_{comp}-0.2\sigma_{P_{comp}}$, $P_{comp} \leq \bar P_{comp}+0.2\sigma_{P_{comp}}$\]|
 |Trading Positions | daily | - |1 represents buy, and -1 represents sell |
 
-*Table 2: Sentiment Analysis: Calculated Variables. This table shows a detailed description of the calculated variables. *
+*Table 2: Sentiment Analysis: Calculated Variables. This table shows a detailed description of the calculated variables.*
