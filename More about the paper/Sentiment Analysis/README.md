@@ -1,3 +1,3 @@
 # Introduction
 
-This section introduces ***sentiment analysis*** strategy in the form of Introduction, Methodology (Algorithm & Data), Result, and Discussions.
+The [main.md file](https://github.com/SciEcon/SRS2021/blob/main/More%20about%20the%20paper/Sentiment%20Analysis/main.md) introduces ***sentiment analysis*** strategy in the form of Introduction, Methodology (Algorithm & Data), Result, and Discussion.
