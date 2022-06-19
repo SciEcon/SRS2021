@@ -12,3 +12,22 @@ Existing literature in sentiment analysis intended for price prediction without 
 
 ![Sentiment Analysis: The Algorithm](https://github.com/SciEcon/SRS2021/blob/main/fig/fig2_3.png)
 *Figure 1: Sentiment analysis: the algorithm. Following the general pipeline described in Figure 2. The algorithm starts from the left with the inputs (pink), we get our data sources from Yahoo Finance API, Alpha Vantage API, and snscrape API [[10]](https://pypi.org/project/yfinance/) [[11]](https://www.alphavantage.co/documentation/) [[12]](https://github.com/JustAnotherArchivist/snscrape). The raw input variables will be historical closing prices and tweets online comments with specific hashtags. Once the historical data, tweets, and the subset of assets to trade are determined, we perform our analysis (blue) which is the natural language processing [[13]](https://ojs.aaai.org/index.php/ICWSM/article/view/14550) and the exponential moving average calculation. Then we propose a sentiment trading condition to produce buy and sell signals (green). Lastly, we will evaluate the performance by using ROI and Sharpe Ratio.*
+
+Figure 1 shows the pipeline for Sentiment Analysis Case Study. We collect historical prices from Yahoo Finance API  and tweets text by snscrape API. Then we calculate the sentiment category by VADER [[13]](https://ojs.aaai.org/index.php/ICWSM/article/view/14550), a natural language processing tool that combines a lexicon-based approach and grammatical rules to quantify sentiment polarity. We generated buy and sell signals based on two inferences: 1) whether the current price deviates significantly from the average? 2) whether there is a significant positive or negative sentiment? If the price is significantly lower than its EMA and the sentiment is in the positive range, we infer an underestimation of stock value and emotion to drive the market price high soon. Thus, the investor should buy. On the other hand, if the price is significantly higher than its EMA and the sentiment is in the negative range, we infer an overestimation of the stock value and emotion to drive the market price low soon. Thus the investor should sell. We keep other aspects of the case study as consistent with previous ones as possible. 
+
+## Data
+
+We collected historical stock prices and cryptocurrency prices from Yahoo Finance API [[10]](https://pypi.org/project/yfinance/) and Alpha Vantage API [[11]](https://www.alphavantage.co/documentation/) separately. Tweets were obtained from Twitter through Snscrape API [[12]](https://github.com/JustAnotherArchivist/snscrape). Snscrape API outweighs Twitter API in terms of comprehensiveness of queries because Twitter API has an upper limit of 180 queries per 15 minutes. Table 1 shows the sentiment analysis raw variables: 
+
+\begin{table}[ht]
+\begin{tabular}{|c|c|c|}
+\hline
+Variable Name & Frequency & Unit \\ \hline
+Date & daily & YYYY-MM-DD \\ \hline
+Tweets & - & - \\ \hline
+Stock Price & daily & USD \\ \hline
+Crypto Price & daily & USD \\ \hline
+\end{tabular}
+\caption{Sentiment Analysis: Raw Variables\\
+Data Source: Snscrape API, Yahoo Finance API, Alpha Vantage API. This table shows the raw data that we retrieved from the APIs. The price of stock and crypto asset corresponds to the close price of the given asset at a given date.}
+\end{table}
