@@ -49,3 +49,25 @@ The initial capital is 100,000 USD. The transaction fee is 0.1\%. We sell the as
 At the beginning of the trading period, there is no transaction if no buy or sell signal exists. At the end of the trading period, we sell all the shares. We make a comparison with the buy and hold strategy (invest all cash on the first trading day, and sell all the shares on the last trading day).
 
 # Result
+We choose one typical cryptocurrency, Bitcoin (BTC), to discover whether traders could make use of the sentiment analysis strategies to get a certain amount of profits.
+
+Figure 2 is a visualization of how buy and sell strategy is defined when applying the Sentiment Analysis to perform the backtesting on BTC. The line in pink shows the evolution of the price of BTC for the period retrieved. The line in blue shows the standard deviation of the difference of closing price and exponential moving average. The pink and blue dots represent positive and negative sentiment category, respectively. According to Figure 2, when the difference of adjusted closing price and exponential moving average is larger than its standard deviation, and the sentiment is negative, it would generate a selling signal, represented by a downward red arrow in the graph. When the difference of adjusted closing price and exponential moving average is smaller than its standard deviation, and the sentiment is positive, it would generate a buying signal, represented by an upward green arrow in the graph.
+
+
+![Buy-and-sell Signal](https://github.com/SciEcon/SRS2021/blob/main/fig/fig3_3_a.png)
+*Figure 2: Buy-and-sell Signal: Sentiment Analysis*
+
+Figure 3 shows how portfolio would change in the time series after applying the sentiment analysis strategy to claim to buy or sell the BTC during the backtesting period. We plotted the current amount of cash in red, the value of the holdings in green, and the sum of both cash and holdings in blue (total). The overall trend of total value is increasing in the graph.
+
+![Portfolio Time Series](https://github.com/SciEcon/SRS2021/blob/main/fig/fig3_3_b.png)
+*Figure 3: Portfolio Time Series: Sentiment Analysis*
+
+Figure 4 displays a comparison of the ROI when trading BTC using buy-and-hold strategy (in blue) and the sentiment strategy (in pink). The figure depicts that, with sentiment analysis algorithm, the ROI given this backtesting period is 54.57\%, performing twice as much as the simple buy and hold strategy, which produces the result of ROI of 27.00\%. 
+
+![ROI](https://github.com/SciEcon/SRS2021/blob/main/fig/fig3_3_c.png)
+*Figure 4: Gross ROI: Sentiment Analysis vs Buy-And-Hold: Sentiment strategy ROI: 54.57\%, Buy & hold strategy ROI: 27.00\%*
+
+Figure 5 displays a comparison of the Sharpe Ratio when trading BTC using buy-and-hold strategy (in blue) and the sentiment strategy (in pink). The figure depicts that, the Sharpe Ratio of the sentiment analysis algorithm reaches 1.24, showing that this strategy has a relatively higher ability to deal with financial risks, compared to the Sharpe Ratio of simple buy and sell strategy, 0.69.
+
+![Sharpe Ratio](https://github.com/SciEcon/SRS2021/blob/main/fig/fig3_3_d.png)
+*Figure 5: Sharpe Ratio: Sentiment Analysis vs buy-and-hold: Sentiment strategy Sharpe Ratio: 1.24, Buy & hold strategy Sharpe Ratio: 0.69*
