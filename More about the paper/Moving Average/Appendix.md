@@ -45,3 +45,18 @@ At the same time, some existing literature claims that SMA fails to consider the
 
 $EMA_{t}^{n} = \frac{2}{n+1} (p_t - EMA_{t}^{n-1}) + EMA_{t}^{n-1} \quad t \geq 2$
 
+Figure 13 is a visualization of how buy and sell strategy is defined when applying the Exponential Moving Average Strategy to perform the backtesting on ETH. Similar to previous analysis, it is easy to understand that when the Short-window Moving Average (SWMA) crosses above the Long-window Moving Average (LWMA), it would generate a buy signal. On the contrary, it would produce a sell signal. The signal is specifically drawn on the closing price line.
+
+![Buy-and-Sell Signal: exponential moving average crossover](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_3_1_e.png)
+*Figure 13: Buy-and-Sell Signal: exponential moving average crossover*
+
+Figure 14 shows how portfolio would change in the time series after applying the exponential moving average crossover strategy to claim to buy or sell the ETH during the backtesting period. From Figure 14, it is obvious to discover that over the two-year backtesting periods, the total revenue is increasing. From Figure 15, ROI given this backtesting period is $856.60\%$, performing much better than the simple buy and hold strategy, which produces the result of ROI $22.55 \%$. From Figure 16, Sharpe Ratio given this backtesting period is $1.00$, showing that this strategy has a relatively higher ability to deal with financial risks, which produces the result of Sharpe Ratio $2.83$.
+
+![Portfolio time series: exponential moving average crossover](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_3_1_f.png)
+*Figure 14: Portfolio time series: exponential moving average crossover*
+
+![Gross ROI: exponential moving average crossover vs buy-and-hold](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_3_1_g.png)
+*Figure 15: Gross ROI: exponential moving average crossover vs buy-and-hold*
+
+![SSharpe Ratio: exponential moving average crossover vs buy-and-hold](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_3_1_h.png)
+*Figure 16: Sharpe Ratio: exponential moving average crossover vs buy-and-hold*
