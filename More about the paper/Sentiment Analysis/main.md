@@ -52,7 +52,19 @@ Table 2 shows the sentiment analysis calculated variables:
 |$P_{comp}$ | per tweet | - | A normalized compound score that sums every lexicon rating and takes values from -1 to 1 |
 |$EMA_{t}$ <br /> (10-day) | daily | USD | Exponential moving average of adjusted closing price, where $EMA_{0} = P_{0}$ and $EMA_{t} = (1-\alpha)EMA_{t-1}+P_{t}, \alpha = 2/(s+1)$. For span $s \geq 1, s:$ decay in terms of span $P_{t}$ : day t closing price |
 |Raw Trading Position | daily | USD | $P_t-EMA_{t}$|
-|Sentiment Category | daily | Negative, Positive, Neutral | Negative: $P_{comp}<\bar P_{comp}-0.2\sigma_{P_{comp}}$ <br /> Positive: $P_{comp}>\bar P_{comp}+0.2\sigma_{P_{comp}}$ <br /> Neutral: $P_{comp} \geq \bar P_{comp}-0.2\sigma_{P_{comp}}$ <br /> $P_{comp} \leq \bar P_{comp}+0.2\sigma_{P_{comp}}$|
+|Sentiment Category | daily | Negative, Positive, Neutral | Negative: $P_{comp}<\bar P_{comp}-0.2\sigma_{P_{comp}}$ <br /> Positive: $P_{comp}>\bar P_{comp}+0.2\sigma_{P_{comp}}$ <br /> Neutral: $P_{comp} \geq \bar P_{comp}-0.2\sigma_{P_{comp}}$ or $P_{comp} \leq \bar P_{comp}+0.2\sigma_{P_{comp}}$|
 |Trading Positions | daily | - |1 represents buy, and -1 represents sell |
 
 *Table 2: Sentiment Analysis: Calculated Variables. This table shows a detailed description of the calculated variables.*
+
+The initial capital is 100,000 USD. The transaction fee is 0.1\%. We sell the assets when
+\begin{equation}
+    P_t-EMA_t> \sigma_{P-EMA} \: \& \: sentiment=negative
+\end{equation}
+
+and we buy the assets when
+\begin{equation}
+    P_t-EMA_t<-\sigma_{P-EMA} \: \& \: sentiment=positive
+\end{equation}
+
+At the beginning of the trading period, there is no transaction if no buy or sell signal exists. At the end of the trading period, we sell all the shares. We make a comparison with the buy and hold strategy (invest all cash on the first trading day, and sell all the shares on the last trading day).
