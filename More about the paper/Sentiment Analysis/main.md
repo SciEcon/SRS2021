@@ -17,21 +17,7 @@ Figure 1 shows the pipeline for Sentiment Analysis Case Study. We collect histor
 
 ## Data
 
-We collected historical stock prices and cryptocurrency prices from Yahoo Finance API [[10]](https://pypi.org/project/yfinance/) and Alpha Vantage API [[11]](https://www.alphavantage.co/documentation/) separately. Tweets were obtained from Twitter through Snscrape API [[12]](https://github.com/JustAnotherArchivist/snscrape). Snscrape API outweighs Twitter API in terms of comprehensiveness of queries because Twitter API has an upper limit of 180 queries per 15 minutes. Table 1 shows the sentiment analysis raw variables: 
-
-\begin{table}[ht]
-\begin{tabular}{|c|c|c|}
-\hline
-Variable Name & Frequency & Unit \\ \hline
-Date & daily & YYYY-MM-DD \\ \hline
-Tweets & - & - \\ \hline
-Stock Price & daily & USD \\ \hline
-Crypto Price & daily & USD \\ \hline
-\end{tabular}
-\caption{Sentiment Analysis: Raw Variables\\
-Data Source: Snscrape API, Yahoo Finance API, Alpha Vantage API. This table shows the raw data that we retrieved from the APIs. The price of stock and crypto asset corresponds to the close price of the given asset at a given date.}
-\end{table}
-
+We collected historical stock prices and cryptocurrency prices from Yahoo Finance API [[10]](https://pypi.org/project/yfinance/) and Alpha Vantage API [[11]](https://www.alphavantage.co/documentation/) separately. Tweets were obtained from Twitter through Snscrape API [[12]](https://github.com/JustAnotherArchivist/snscrape). Snscrape API outweighs Twitter API in terms of comprehensiveness of queries because Twitter API has an upper limit of 180 queries per 15 minutes. Table 1 shows the sentiment analysis raw variables:
 
 | **Variable Name**  | **Frequency** | **Unit** | 
 | :----------------: | :-----------: | :------: |
