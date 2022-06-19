@@ -43,5 +43,5 @@ The figures below show the generated buy-and-sell signals using the Simple Movin
 
 At the same time, some existing literature claims that SMA fails to consider the issue of recency [[1]](https://www.jstor.org/stable/pdf/1913829.pdf) [[2]](https://par.nsf.gov/servlets/purl/10186768). Exponential Moving Average, defined in Equation \ref{eq:3} is an  alternative indicator that puts more weights on recent prices [[3]](https://www.cambridge.org/core/journals/journal-of-applied-probability/article/abs/an-exponential-movingaverage-sequence-and-point-process-ema1/7CFB5DE9313286DAB7C6EF3D40D62129) [[4]](https://ieeexplore.ieee.org/document/6252962). We also take ETH as an exemplified cryptocurrency for analysis.
 
-$EMA_{t}^{n} = \frac{2}{n+1} (p_t - EMA_{t}^{n-1}) + EMA_{t}^{n-1} \ t \geq 2$
+$EMA_{t}^{n} = \frac{2}{n+1} (p_t - EMA_{t}^{n-1}) + EMA_{t}^{n-1} \quad t \geq 2$
 
