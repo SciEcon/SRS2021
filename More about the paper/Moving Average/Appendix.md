@@ -66,6 +66,7 @@ Figure 14 shows how portfolio would change in the time series after applying the
 As several machine learning algorithms are developed these days, we find that Recurrent Neural Network (RNN) might be a good training model to compensate for the disadvantages of moving average crossover strategy, for it could distinguish between recent and relatively old data when doing the training. Sang and Massimo (2019) integrate Long-short-term Memory Neural Network (LSTM), a classic modification from Recurrent Neural Network (RNN) in Data Science, with SMA [[5]](https://www.sciencedirect.com/science/article/pii/S2405918818300539). The reason to apply LSTM is that it could update the current state with information in the past and compute the gradient using truncated Backpropagation Through Time (BPTT). There is an advantage of Truncated BPTT over full BPTT when the length of the input sequential data is large as the former is able to effectively prevent gradient vanishing problems.
 
 An LSTM unit involves four gates: Input Gate $i_t$, Output Gate $o_t$, Forget Gate $f_t$, and Stage Update Gate $c_t$, and they are connected in such a way that
+
 $f_t = \sigma_f(W_{fx}x_t + W_{fh}h_{t-1} + B_f)$
 
 $i_t = \sigma_i(W_{ix}x_t + W_{ih}h_{t-1}+b_i)$ 
@@ -75,3 +76,20 @@ $o_t = \sigma_o(W_{ox}x_t + W_{oh}h_{t-1}+b_o)$
 $c_t = f_{t}c_{t-1} + i_t \text{tanh}(W_{cx}x_t + W_{ch}h_{t-1} + b_c)$
 
 $h_t = o_t \text{tanh}(c_t)$
+
+where $x_t$ refers to Input Tensor, $h_t$ refers to Output Tensor, $W$ refers to Weights, and $b$ refers to Biases functions.
+
+Figure 17 is a visualization of how buy and sell strategy is defined when applying the Moving Average Strategy after getting the predicted prices from the LSTM model to perform the backtesting on ETH. Figure 18 shows how portfolio would change in the time series after applying the crossover strategy to claim to buy or sell the ETH during the backtesting period. From Figure 19, it is obvious to discover that over the two-year backtesting periods, the total revenue is decreasing, and ROI given this backtesting period is -39.88\%, performing much better than the simple buy and hold strategy, which produces the result of ROI 0.01 \%. Figure 20 shows that Sharpe Ratio given this backtesting period is $-1.00$, showing that this strategy has a relatively weaker ability to deal with financial risks, which produces the result of Sharpe Ratio $0.36$.
+
+![Buy-and-Sell Signal: BTC moving average crossover](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_5_1_a.png)
+*Figure 17: Buy-and-Sell Signal: moving average crossover with LSTM*
+
+![Portfolio time series: BTC moving average crossover](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_5_1_b.png)
+*Figure 18: Portfolio time series: moving average crossover with LSTM*
+
+![Gross ROI: BTC moving average crossover](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_5_1_c.png)
+*Figure 19: Gross ROI: moving average crossover with LSTM vs buy-and-hold*
+
+![Sharpe Ratio: BTC moving average crossover](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_5_1_d.png)
+*Figure 20: Sharpe Ratio: moving average crossover with LSTM vs buy-and-hold*
+
