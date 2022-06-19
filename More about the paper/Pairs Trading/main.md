@@ -1,3 +1,4 @@
+
 # Methodology
 
 
@@ -12,21 +13,23 @@ The prcoedure is described in more detail in Figure 2. i) We connect to differen
 Figure 1 represents the general pipeline for pairs trading.
 
 ![Pairs trading Analysis: The Algorithm](https://github.com/SciEcon/SRS2021/blob/main/fig/fig2_4.png)
-*Figure 1: Pairs trading: the algorithm. The algorithm starts from the left with the inputs (pink), we get our data sources from Alpha Vantage API (https://www.alphavantage.co/documentation/). The raw input variables will be historical closing prices and the subsets of assets to be tested will be divided into two groups, namely S\&P500 stocks only and Digital Currencies (DeFi tokens and Cryptocurrencies) only. Once the historical data and the subset of assets to trade are determined, we perform our analysis (blue) which is the pairs selection process using either Machine Learning or Brute Force. Then we calculate the spread using either a normalized or a simple spread which is explained in detail in section Spread. The spread then allows defining the thresholds which are then used to produce the first element of the output dashboard (green), namely the buy/sell/exit signals. Lastly, we will evaluate the performance by using ROI and Sharpe Ratio.
+*Figure 1: Pairs trading: the algorithm. The algorithm starts from the left with the inputs (pink), we get our data sources from Alpha Vantage API (https://www.alphavantage.co/documentation/). The raw input variables will be historical closing prices and the subsets of assets to be tested will be divided into two groups, namely S\&P500 stocks only and Digital Currencies (DeFi tokens and Cryptocurrencies) only. Once the historical data and the subset of assets to trade are determined, we perform our analysis (blue) which is the pairs selection process using either Machine Learning or Brute Force. Then we calculate the spread using either a normalized or a simple spread which is explained in detail in section Spread. The spread then allows defining the thresholds which are then used to produce the first element of the output dashboard (green), namely the buy/sell/exit signals. Lastly, we will evaluate the performance by using ROI and Sharpe Ratio.*
 
 ### Pair Selection
 The process of Pairs Selection can be computed in several ways. The first method to be analyzed in this section is based on the work from Gatev, Goetzmann, and Rouwenhorst (1998) [[12]](http://www-stat.wharton.upenn.edu/~steele/Courses/434/434Context/PairsTrading/PairsTradingGGR.pdf) This can be considered a brute force algorithm since it consists of comparing every possible pair, which implies that there will be in total $\frac{n(n+1)}{2}$ different pairs to compare. The metric used by the authors to determine the pairs that have been historically moving together is called a Sum of Standard Deviations ($SDD$) which can be defined as
 
-    $SDD = \sum_{t\in F}\left(\frac{P^X_t}{P^X_1} - \frac{P^Y_t}{P^Y_1}\right)$
+$$
+    SDD = \sum_{t\in F}\left(\frac{P^X_t}{P^X_1} - \frac{P^Y_t}{P^Y_1}\right)
+$$
 
 Where $t$ is a day in the Formation period $F$.
 
 However, comparing every single pair results computationally very expensive. Furthermore, some pairs behave completely differently from each other but we still dedicate the same amount of resources to them than to pairs that are more similar to each other. Therefore, we also implemented a Machine Learning solution [[13]](https://www.sciencedirect.com/science/article/abs/pii/S0957417420303146). By using an unsupervised learning approach, it is possible to reduce the energy consumption on pairs trading.
 
 The first step using the Machine Learning approach is to compute the daily returns $ROI_t$
-
-    $ROI_t = \frac{P_t}{P_{t-1}}-1 $
-
+$$
+    ROI_t = \frac{P_t}{P_{t-1}}-1 
+$$
 through the formation period. We then perform Principal Component Analysis (PCA) to reduce the number of dimensions for each data point. Then, we input the resulting matrix into an Unsupervised Learning algorithm, namely OPTICS, which clusters data into different subsets and excludes those that are too far apart to be clustered.
 
 This process allows to reduce the time complexity from $O(n^2)$ to $O(n^2_1 + n^2_2 + ... + n^2_k)$ where $k << n$ and $n_i << n$. Therefore, $O(n^2_1 + n^2_2 + ... + n^2_k) << O(n^2)$.
@@ -38,14 +41,14 @@ One of the most significant differences, however, is the way pairs are filtered 
 
 Lastly, these papers propose two different forms of calculating the spread between two pairs. [[18]](http://www-stat.wharton.upenn.edu/~steele/Courses/434/434Context/PairsTrading/PairsTradingGGR.pdf) use what we call a simple spread $S_{\text{simple}}$
 
-
-    $S_{\text{simple}} = \sum_{t\in F}\left(P^A_t - P^B_t\right)$
-
+$$
+   S_{\text{simple}} = \sum_{t\in F}\left(P^A_t - P^B_t\right)
+$$
 
 Where $P^X_t$ is the price of asset $X$ at time $t$. On the other hand, Sarmento and Horta (2020) use what we call a normalized spread $S_{\text{normal}}$
-
-    $S_{\text{normal}} = \sum_{t \in F} \left(\frac{P^A_t}{P^A_0} - \frac{P^B_t}{P^B_0}\right)$
-
+$$
+    S_{\text{normal}} = \sum_{t \in F} \left(\frac{P^A_t}{P^A_0} - \frac{P^B_t}{P^B_0}\right)
+$$
 Where $P^X_0$ is the price of asset $X$ at the beginning of the Formation period $F$. Also notice that $SDD$ and $S_{\text{normal}}$ are equivalent but serve two different purposes, hence, we differentiate between these two.
 
 
