@@ -1,11 +1,8 @@
 # Methodology
 ## Algorithm
 
-Public mood is another valuable indicator to predict the change in market value of financial assets. 
-Moreover, the advances in computational algorithms, coined Sentiment Analysis or Emotion AI, make public mood quantifiable. 
-Teclock \cite{tetlock_2007}first proposes a newsreader algorithm that utilizes the information in news, tweets, blogs, and surveys to predict stock price. 
-Previous research applied a variety of methods in Natural Language Processing (NLP) to quantify sentiments, 
-which significantly improves the prediction of stock prices \cite{bollen_mao_zeng_2011,luss_d_aspremont_2012}.
+Public mood is another valuable indicator to predict the change in market value of financial assets. Moreover, the advances in computational algorithms, coined Sentiment Analysis or Emotion AI, make public mood quantifiable. Teclock [[1]](https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.2007.01232.x) first proposes a newsreader algorithm that utilizes the information in news, tweets, blogs, and surveys to predict stock price. 
+Previous research applied a variety of methods in Natural Language Processing (NLP) to quantify sentiments, which significantly improves the prediction of stock prices [[2]](https://www.sciencedirect.com/science/article/pii/S187775031100007X?via%3Dihub) [[3]](https://www.tandfonline.com/doi/full/10.1080/14697688.2012.672762).
 
 A majority of studies have examined Twitter’s predictive power on stock market value 
 such as Dow Jones Industrial Average (DJIA) and S\&P 500 \cite{bollen_mao_zeng_2011, makrehchi_shah_liao_2013,zhang_fuehres_gloor_2011,sprenger_sandner_tumasjan_welpe_2014, kraaijeveld_smedt_2020}. 
