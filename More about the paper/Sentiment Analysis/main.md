@@ -57,11 +57,8 @@ Table 2 shows the sentiment analysis calculated variables:
 
 *Table 2: Sentiment Analysis: Calculated Variables. This table shows a detailed description of the calculated variables.*
 
-The initial capital is 100,000 USD. The transaction fee is 0.1\%. We sell the assets when $P_t - EMA_t> \sigma_{P-EMA}$ \: \& \: sentiment=negative,
-
-and we buy the assets when
-\begin{equation}
-    P_t-EMA_t<-\sigma_{P-EMA} \: \& \: sentiment=positive
-\end{equation}
+The initial capital is 100,000 USD. The transaction fee is 0.1\%. We sell the assets when $P_t - EMA_t> \sigma_{P-EMA}$  \& sentiment=negative, and we buy the assets when $P_t-EMA_t<-\sigma_{P-EMA}$ \& sentiment=positive. 
 
 At the beginning of the trading period, there is no transaction if no buy or sell signal exists. At the end of the trading period, we sell all the shares. We make a comparison with the buy and hold strategy (invest all cash on the first trading day, and sell all the shares on the last trading day).
+
+# Result
