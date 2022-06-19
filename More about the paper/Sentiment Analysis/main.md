@@ -31,3 +31,11 @@ Crypto Price & daily & USD \\ \hline
 \caption{Sentiment Analysis: Raw Variables\\
 Data Source: Snscrape API, Yahoo Finance API, Alpha Vantage API. This table shows the raw data that we retrieved from the APIs. The price of stock and crypto asset corresponds to the close price of the given asset at a given date.}
 \end{table}
+
+
+| **Variable Name**  | **Frequency** | **Unit** | 
+| :----------------: | :-----------: | :------: |
+| Date  | daily  | YYYY-MM-DD |
+| Tweets|- | - |
+|Stock Price | daily | USD |
+|Crypto Price | daily | USD|
