@@ -72,7 +72,7 @@ Figure 5 displays a comparison of the Sharpe Ratio when trading BTC using buy-an
 ![Sharpe Ratio](https://github.com/SciEcon/SRS2021/blob/main/fig/fig3_3_d.png)
 *Figure 5: Sharpe Ratio: Sentiment Analysis vs buy-and-hold: Sentiment strategy Sharpe Ratio: 1.24, Buy & hold strategy Sharpe Ratio: 0.69*
 
-# Discussion
+# Appendix
 Figures below show the generated buy-and-sell signals using the sentiment analysis strategy, the portfolio evolution, the ROI, and the Sharpe Ratio for Ether (ETH) and Apple (AAPL) stock.
 
 ![AAPL Buy-and-sell Signal](https://github.com/SciEcon/SRS2021/blob/main/fig/fig_5_3_a.png)
