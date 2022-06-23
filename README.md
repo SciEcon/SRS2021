@@ -9,6 +9,10 @@ by **Luyao Zhang\*<sup>+</sup>, Tianyu Wu<sup>+</sup>, Saad Lahrichi<sup>+</sup>
 
 <sup>+</sup>: joint first authors
 
+![A Data Science pipeline for Algorithmic Trading: A comparative study in applications to Finance and cryptoeconomics](https://github.com/SciEcon/SRS2021/blob/main/fig/fig1.png)
+
+
+
 
 |   **Folder**   | **URL** | 
 |:------------|:---------|
