@@ -20,4 +20,4 @@ by **Luyao Zhang\*<sup>+</sup>, Tianyu Wu<sup>+</sup>, Saad Lahrichi<sup>+</sup>
 | Data| https://github.com/SciEcon/SRS2021/tree/main/Data |  
 |code |  https://github.com/SciEcon/SoK_Blockchain_Decentralization/tree/main/code |  
 |fig|https://github.com/SciEcon/SRS2021/tree/main/fig | 
-|Appendix|https://github.com/SciEcon/SRS2021/tree/main/More%20about%20the%20paper| 
+|More about the paper (Appendix)|https://github.com/SciEcon/SRS2021/tree/main/More%20about%20the%20paper| 
