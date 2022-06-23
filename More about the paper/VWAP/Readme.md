@@ -1,4 +1,4 @@
-# Appendix
+# Appendix A2
 
 ## Additional Assets' performances by Volume Weighted Average Price Strategies
 The figures below show the generated buy-and-sell signals using the VWAP strategy, the portfolio evolution, the ROI, and the Sharpe Ratio for Bitcoin (BTC), Apple (AAPL), and Tesla (TSLA).
