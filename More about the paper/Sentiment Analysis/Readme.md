@@ -1,4 +1,4 @@
-# Methodology
+# Appendix B.2 Sentiment Analysis
 ## Algorithm
 
 Public mood is another valuable indicator to predict the change in market value of financial assets. Moreover, the advances in computational algorithms, coined Sentiment Analysis or Emotion AI, make public mood quantifiable. Teclock [[1]](https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.2007.01232.x) first proposes a newsreader algorithm that utilizes the information in news, tweets, blogs, and surveys to predict stock price. 
