@@ -1,5 +1,5 @@
 
-# Methodology
+# Appendix B.2. Pair Trading
 
 
 ## Algorithm
