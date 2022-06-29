@@ -129,10 +129,10 @@ As we can observe in Figure 5, shoring EOS becomes profitable because its price 
 ![BUSD \& EOS Buy \& Sell Signal: Pairs Trading](https://github.com/SciEcon/SRS2021/blob/main/fig/fig3_4_a.png)
 *Figure 3: BUSD \& EOS Buy \& Sell Signal: Pairs Trading*
 
-![BUSD \& EOS Portfolio time series: Pairs Trading](https://github.com/SciEcon/SRS2021/blob/main/fig/fig3_4_b.png)
+![BUSD \& EOS Portfolio time series: Pairs Trading](https://github.com/SciEcon/SRS2021/blob/main/fig/fig3_4_c.png)
 *Figure 4: BUSD \& EOS Portfolio time series: Pairs Trading*
 
-![BUSD \& EOS Gross ROI: Pairs Trading vs buy-and-hold; Pairs Trading strategy ROI: 24.92\% ; Buy \& hold strategy ROI: 0.00\%](https://github.com/SciEcon/SRS2021/blob/main/fig/fig3_4_c.png)
+![BUSD \& EOS Gross ROI: Pairs Trading vs buy-and-hold; Pairs Trading strategy ROI: 24.92\% ; Buy \& hold strategy ROI: 0.00\%](https://github.com/SciEcon/SRS2021/blob/main/fig/fig3_4_b.png)
 *Figure 5: BUSD \& EOS Gross ROI: Pairs Trading vs buy-and-hold; Pairs Trading strategy ROI: 24.92\% ; Buy \& hold strategy ROI: 0.00\%*
 
 
