@@ -1,5 +1,5 @@
 # A Data Science pipeline for Algorithmic Trading: A comparative study in applications to Finance and cryptoeconomics
-*working paper on arXiv: Coming Soon*
+*working paper on arXiv: [https://arxiv.org/abs/2206.14932#](https://arxiv.org/abs/2206.14932#)*
 
 ## *Supplementary resources, data, and code*
 
